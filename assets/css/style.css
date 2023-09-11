@@ -133,6 +133,7 @@ h6 {
     transition: all 0.5s;
     z-index: 997;
     padding: 15px 0;
+    width: 100%;
 }
 
 #header.header-scrolled,
@@ -183,7 +184,7 @@ h6 {
 .nav-menu>ul>li {
     position: relative;
     white-space: nowrap;
-    padding: 10px 0 10px 28px;
+    padding: 10px;
 }
 
 .nav-menu a {
@@ -749,6 +750,65 @@ section {
     transform: translateY(-10px);
 }
 
+/*--------------------------------------------------------------
+# références
+--------------------------------------------------------------*/
+
+.references .icon-box {
+    text-align: center;
+    border: 1px solid #c7c7c7;
+    padding: 30px 20px;
+    transition: all ease-in-out 0.3s;
+    background: #fff;
+}
+
+.references .icon-box .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    background: #0074D9;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.references .icon-box .icon i {
+    color: #151515;
+    font-size: 28px;
+    transition: ease-in-out 0.3s;
+}
+
+.references .icon-box h5 {
+    padding-top: 20px;
+    font-weight: 35px;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.references .icon-box h5 a {
+    color: #151515;
+    transition: ease-in-out 0.3s;
+}
+
+.references .icon-box h5 a:hover {
+    color: #0074D9;
+}
+
+.references .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.references .icon-box:hover {
+    border-color: #fff;
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+}
+
 
 /*--------------------------------------------------------------
 # Cta
@@ -1105,6 +1165,113 @@ section {
         width: 80%;
     }
 }
+/*--------------------------------------------------------------
+# Testimonials2
+--------------------------------------------------------------*/
+
+.testimonials2 {
+    padding: 50px 0;
+    /* background: url("../img/testimonials-bg.jpg") no-repeat; */
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.testimonials2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* background: rgba(0, 0, 0, 0.7); */
+}
+
+.testimonials2 .section-header {
+    margin-bottom: 40px;
+}
+
+.testimonials2 .testimonial-item {
+    text-align: center;
+    color: #fff;
+}
+
+.testimonials2 .testimonial-item .testimonial-img {
+    width: 100px;
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.15);
+    margin: 0 auto;
+}
+
+.testimonials2 .testimonial-item h3 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 70px;
+    margin: 10px 0 5px 0;
+    color: #fff;
+}
+
+.testimonials2 .testimonial-item h4 {
+    font-size: 14px;
+    color: #ddd;
+    margin: 0 0 15px 0;
+}
+
+.testimonials2 .testimonial-item .quote-icon-left,
+.testimonials2 .testimonial-item .quote-icon-right {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 26px;
+}
+
+.testimonials2 .testimonial-item .quote-icon-left {
+    display: inline-block;
+    left: -5px;
+    position: relative;
+}
+
+.testimonials2 .testimonial-item .quote-icon-right {
+    display: inline-block;
+    right: -5px;
+    position: relative;
+    top: 10px;
+}
+
+.testimonials2 .testimonial-item p {
+    font-style: italic;
+    margin: 0 auto 15px auto;
+    color: #eee;
+}
+
+.testimonials2 .owl-nav,
+.testimonials2 .owl-dots {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.testimonials2 .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.testimonials2 .owl-dot.active {
+    background-color: #0074D9 !important;
+}
+
+@media (min-width: 1024px) {
+    .testimonials2 {
+        background-attachment: fixed;
+    }
+}
+
+@media (min-width: 992px) {
+    .testimonials2 .testimonial-item p {
+        width: 80%;
+    }
+}
 
 
 /*--------------------------------------------------------------
@@ -1402,6 +1569,13 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
+
+#carouselExampleSlidesOnly img{
+    
+    width:  250px;
+    height: 300px;
+    object-fit: cover;
+}
 
 .portfolio-details {
     padding-top: 40px;
